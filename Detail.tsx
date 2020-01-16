@@ -36,7 +36,6 @@ const ItemCardFooter = ({ item, onDelete }) => (
 
 const ItemCard = ({ item, onDelete }) => (
     <Card
-        themedStyle={{ textTransform: 'uppercase' }}
         footer={() => <ItemCardFooter item={item} onDelete={onDelete} />} style={{ margin: 10 }}>
         <Text>
             {item.name.toUpperCase()}
@@ -72,9 +71,13 @@ export const DetailsScreen = ({ navigation }) => {
 
   return (
     <Body>
-      <TopNavigation title='MyApp' alignment='center' leftControl={BackAction()}/>
+      <TopNavigation
+        title='MyApp'
+        alignment='center'
+        leftControl={BackAction()}/>
+
       <Divider/>
-      <Layout>
+      <Layout style={{ flex: 1 }}>
 
         <ScrollView>
             {items.map(item => (
