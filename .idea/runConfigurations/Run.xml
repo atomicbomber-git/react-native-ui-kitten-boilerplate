@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run" type="CompoundRunConfigurationType">
+    <toRun name="start-android-emulator" type="js.build_tools.npm" />
+    <toRun name="Start Expo" type="ReactNative" />
+    <method v="2" />
+  </configuration>
+</component>

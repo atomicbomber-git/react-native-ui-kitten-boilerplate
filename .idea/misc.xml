@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="ReactNativePackager" arguments="start" nodePath="$USER_HOME$/.nvm/versions/node/v12.14.1/bin/node" reactNativePackagePath="$PROJECT_DIR$/node_modules/react-native" workingDirectory="$PROJECT_DIR$">
+    <scripts>
+      <item value="expo" />
+    </scripts>
+  </component>
+</project>

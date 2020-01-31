@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+
+spawn emulator -avd pixel_3a_api_28 -verbose
+set emulator_spawn_id $spawn_id
+
+# spawn expo start
+# set expo_spawn_id $spawn_id
+
+expect {
+    -i $emulator_spawn_id "Starting QEMU main loop" {
+        # expect -i $expo_spawn_id "Logs for your project will appear below. Press Ctrl+C to exit." {
+        #     puts "a"
+        #     exp_continue
+        # }
+
+        exp_continue
+    }
+    # -i $expo_spawn_id eof {
+    #     exp_continue
+    # }
+}
